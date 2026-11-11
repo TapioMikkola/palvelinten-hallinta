@@ -145,5 +145,5 @@ Debug viesti toimii!
 Ansiblen sisäänrakennettu dokumentaatio
 Karvinen, Tero 2026: Passwordless Sudo with Ansible. https://terokarvinen.com/passwordless-sudo-with-ansible/
 Karvinen, Tero 2026: Sudo without password. https://terokarvinen.com/passwordless-sudo/
-Microsoft Co-pilot tiettyjen sanojen suomentamisessa ja englannistamisessa ja neuvonantajana kohta e:hen
+Microsoft Co-pilot tiettyjen sanojen suomentamisessa ja englannistamisessa ja neuvonantajana kohta c:hen ja e:hen
 
