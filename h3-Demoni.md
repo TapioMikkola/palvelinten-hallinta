@@ -1,30 +1,48 @@
-#H3 Demoni
+# H3 Demoni
 
 x) Apache2 asennus Ansiblella
+
 -muutokset tulevat voimaan vasta kun apache2 käynnistetään uudelleen.
+
 -handlers-roolin tehtävänä on uudelleenkäynnistää Apache2 Ansiblea ajaessa.
 
+
+
 Handlers: running operations on change
+
 -Verify-apache.yml esimerkissä handler käynnistää apache2:n uudellen kun kaikki playbookin taskit on suoritettu.
+
 -Tasks-rooli voi ilmoittaa yhdelle tai useammalle handlerille execute-komennon avainsanalla "notify"
 
+
+
 Ansible-doc service
+
 -service-moduulilla voidaan käynnistää, pysäyttää ja restartata sovelluksia
+
 -enabled: käynnistyykö palvelu automaattisesti järjerstelmän käynnistyessä (y/n)
+
 -name: hallittavan palvelun nimi
+
 -state: hallittavan palvelun tila (started, stopped, restarted, reloaded)
+
 -EXAMPLES: miten kaikki käytännössä toimii Ansiblessa 
 
-##y) Infrauutiset
+
+## y) Infrauutiset
 
 Goodbye AWS: How We Kept ISO27001, Slashed Costs by 90% https://medium.com/@accounts_73078/goodbye-aws-how-we-kept-iso-27001-slashed-costs-by-90-914ccb4b89fc
+
 -Tanskalainen firma kyllästyi AWS:n kuluihin ja koko operaation riippuvuuteen yhdelle amerikkalaisyhtiölle.
+
 -Infra vaihdettiin eurooppalaisille Hetznerille ja OVHCloudille
+
 -AWS-palvelut korvattiin Ansiblella, Prometheuksella, Grafanalla ja Lokilla
+
 -Kuluista saatiin leikattua 90%
 
 
-##a) Apassi
+## a) Apassi
 
 Paukutin Teron ohjeiden mukaisesti: https://terokarvinen.com/apache-ansible/
 
@@ -51,7 +69,7 @@ Testasin curl komennolla näkyykö publicsite/index.html:
 <img width="431" height="75" alt="Screenshot 2026-11-18 at 3 59 04" src="https://github.com/user-attachments/assets/a9a7ce41-c8eb-4bc8-ad0d-c5b706ab2624" />
 
 
-##b) Moottorix
+## b) Moottorix
 
 Sammutin ensiksi apachen:
 
@@ -91,7 +109,7 @@ Testasin curl komennolla toimivuutta ja muutin /publicsite/index.html tiedostoa 
 <img width="519" height="186" alt="Screenshot 2026-11-18 at 6 32 00" src="https://github.com/user-attachments/assets/205fd701-ee41-44bd-94b7-708d52e7eda7" />
 <img width="714" height="112" alt="Screenshot 2026-11-18 at 6 55 17" src="https://github.com/user-attachments/assets/5521a3d9-f855-4502-b2dc-a6d5062d55b2" />
 
-##c) Automoottorix
+## c) Automoottorix
 
 Loin roolin nginx ja sinne tarvittavat hakemistot komennolla:
 
@@ -131,8 +149,10 @@ Testasin vielä curl http://localhost sekä selaimessa, että päivitetty nginx-
 
 
 
-##Lähteet
+## Lähteet
 
 Karvinen 2026: Apache installed with Ansible https://terokarvinen.com/apache-ansible/
+
 Ansible Community Documentation 2026: Handlers: running operations on change https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
+
 Tekoäly Microsoft Co-pilot ja ChatGPT neuvonantoa nginx:n ajamisesta ansiblella
