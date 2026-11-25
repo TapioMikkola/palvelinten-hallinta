@@ -117,3 +117,9 @@ Ajoin playbookin uudelleen ja mikään ei muuttunut:
 ## f)
 
 Pari on hankittu.
+
+## Lähteet
+
+Karvinen 2023: Configuration Management of Distributed Systems over Unreliable and Hostile Networks: https://web.archive.org/web/20240202212427id_/https://westminsterresearch.westminster.ac.uk/download/4cc417566aa9af60fe3826d690719e390abdb7a3c8672f3d51b1eb4ca75e7624/1427236/karvinen-2023-configuration-management-of-distributed-systems.pdf
+
+Copilottia ja ChatGPT:tä käytetty mariaDB asentamisen neuvonantajana ja playbookien teossa.
